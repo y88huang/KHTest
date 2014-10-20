@@ -1,5 +1,5 @@
 # a CaseSuite is a suite of cases with an option.
-import util
+from util import *
 from KHTestResult import KHTestResult
 
 class  CaseSuite(object):
@@ -16,7 +16,7 @@ class  CaseSuite(object):
 	def run(self, FileName, SolutionName, InputOption):
 		total = len(self.cases)
 		passed = 0
-		util.separatePrint("				TESTING SUITE:"+self.name)
+		separatePrint("				TESTING SUITE:"+self.name)
 		for case in self.cases:
 			if case.run(FileName, SolutionName,InputOption):
 				passed = passed + 1

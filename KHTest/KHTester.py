@@ -1,4 +1,4 @@
-import util
+from util import *
 #The master class.
 class KHTester(object):
 	def __init__(self, make, soln, input):
